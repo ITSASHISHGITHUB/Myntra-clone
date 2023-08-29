@@ -62,26 +62,26 @@ const ListPage = () => {
         FILTERS
         <ul className="list-details">
           <li>
-            <a href="">Country of Origin</a>
+            <a href="/">Country of Origin</a>
             </li>
           <li>
-            <a href="">Clear all</a>
+            <a href="/">Clear all</a>
           </li>
           
           <li>
-            <a href="">Add-Ons</a>
+            <a href="/">Add-Ons</a>
           </li>
           <li>
-            <a href="">Bundles</a>
+            <a href="/">Bundles</a>
           </li>
           <li>
-            <a href="">Collar</a>
+            <a href="/">Collar</a>
           </li>
           <li>
-            <a href="">Fabric</a>
+            <a href="/">Fabric</a>
           </li>
           <li>
-            <a href="">Fit</a>
+            <a href="/">Fit</a>
           </li>
           <div className="Combo-box">
             <ComboBox options={options} setFilteredProducts={setFilteredProducts} products={products}/>
