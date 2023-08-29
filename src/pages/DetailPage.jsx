@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar/Navbar';
-import Img1 from '../assets/asta.jpg';
+
 import Img2 from '../assets/neom.jpg';
 import Img3 from '../assets/img1.jpg';
 import Img4 from '../assets/img4.jpg';
@@ -15,7 +15,6 @@ import {useParams} from 'react-router-dom'
 
 
 
-let nextId = 1;
 const DetailPage = () => {
   const [itemSize, setItemsSize] = useState(0);
   const [showBagModal, setShowBagModal] = useState(false);
@@ -24,9 +23,7 @@ const DetailPage = () => {
 
   const {id}=useParams()
 
-  const dispatch = useDispatch();
-  const bag = useSelector(state => state.bag);
-  const wishlist = useSelector(state => state.wishlist);
+  const dispatch = useDispatch();;
   const products=useSelector(state=>state.products.find(obj => obj.id === +id))
 
   console.log(products)

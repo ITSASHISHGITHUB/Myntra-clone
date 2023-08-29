@@ -27,7 +27,7 @@ const ListPage = () => {
 
           dispatch(addProducts(data)) 
           setFilteredProducts(data)
-  }, []);
+  }, [dispatch]);
   // console.log(products)
   const handleSearchChange = (e) => {
     const newSearchText = e.target.value;
