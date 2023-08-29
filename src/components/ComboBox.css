@@ -1,0 +1,38 @@
+.combo-box {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .selected-option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width:150px;
+  }
+  
+  .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .option {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: white;
+  }
+  

@@ -1,0 +1,116 @@
+.product-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+}
+.product-card img {
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.product-card img:hover {
+  transform: scale(1.01); /* Adjust the zoom level as needed */
+}
+.product-details {
+  margin: 8px 0;
+}
+.product-card .btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+  right: 16px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  padding: 10px; /* Added padding to create space for the button */
+  background-color: rgba(255, 255, 255, 0.9); /* Added background color */
+  border-top: 1px solid #ccc; /* Added border to separate button area */
+}
+.product-card .btn-container.active {
+  opacity: 1;
+}
+.product-card .wishlist-btn {
+  background-color:rgb(202, 181, 202) ;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.product-card .similar-text {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.product-card:hover .similar-text {
+  opacity: 0;
+}
+.view-similar-btn {
+  margin-left: 30px;
+   width: 50px; /* Initial width */
+  height: 50px;
+  border-radius: 80%; /* Circle shape */
+  background-color: rgb(218, 207, 217); /* Background color, change as needed */
+  color: #fff;
+  transition: width 0.7s; /* Smooth transition */
+  overflow: hidden; /* Clip any overflowing content */
+  
+  justify-content:left;
+  align-items: left;
+  border: none;
+  cursor: pointer;
+}
+.view-similar-wrapper {
+  position: relative; /* Needed for positioning the sidebar popup */
+  display: inline-block; /* Ensure that the wrapper only takes the necessary space */
+}
+
+.view-similar-btn:hover {
+  width: 120px; /* Width after hover */
+}
+.sidebar-popup {
+  /* ... Other styles ... */
+  right: -300px; /* Keep it hidden by default */
+  transition: right 0.3s;
+}
+
+.sidebar-popup.active {
+  right: 0; /* Show the sidebar when active */
+}
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+}
+.bottom-text{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0;
+  font-size: medium;
+
+}
+ .bottom-text >p{
+  margin: 0;
+  padding: 0;
+}
+.title{
+  font-weight: bold;
+}
+.price{
+  
+}

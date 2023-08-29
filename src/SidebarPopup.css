@@ -1,0 +1,103 @@
+/* SidebarPopup.css */
+
+.sidebar-popup {
+  position: relative;
+  top: 0;
+  right: -00px;
+  width: 300px;
+  height: 100%;
+  background-color: #c21e1e; /* Change the background color */
+  box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+/* Rest of your styles */
+
+
+/* SidebarPopup.css */
+
+/* Styles for the modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Styles for the modal content */
+.sidebar-popup {
+  background-color: rgb(174, 166, 174);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px red;
+}
+
+/* Additional styles as needed */
+
+.sidebar-popup.show {
+  right: 0;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  gap: 20px;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  width: 75px;
+  margin-right: 50px;
+}
+
+.product-list {
+  max-width: 100%; /* Set the max width to 100% */
+  height: auto;
+}
+
+.buy-now-btn {
+  padding: 8px 15px;
+  background-color: #d85876;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.buy-now-btn:hover {
+  background-color: #ff66b2;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 8px 15px;
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #999;
+}

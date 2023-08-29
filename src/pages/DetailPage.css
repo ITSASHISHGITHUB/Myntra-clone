@@ -1,0 +1,167 @@
+/* ProductDetailPage.css */
+.detail-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.info-container {
+  flex: 1;
+}
+.text-inclusive {
+  color: brown;
+}
+.pincode-button {
+  margin-left: 10px;
+}
+.size-btn-container {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+.circle-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Makes the button circular */
+  border: none;
+  background-color: #e0e0e0; /* Change the background color as needed */
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.circle-button.active{
+  background-color: #ff3e6c;
+  color: white;
+}
+/* Add this to your existing CSS file or create a new one */
+
+/* ... (your existing styles) */
+
+/* Styles for the zoom modal */
+.zoom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.zoomed-image-container {
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.zoomed-image-container img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.close-zoom {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.close-zoom:hover {
+  background-color: #ccc;
+}
+
+.circle-button:hover {
+  background-color: #ff3e6c; /* Change the hover background color as needed */
+}
+.btn-container {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons as needed */
+}
+.search-bar {
+  display: flex;
+  gap: 10px; /* Adjust the gap between input and button */
+  max-width: 400px; /* Set the maximum width of the search bar */ /* Center the search bar horizontally */
+}
+
+.input-box {
+  flex: 2; /* Take available space in the container */
+  height: 20px;
+  padding: 9px;
+  border: 2px solid #ccc;
+  border-radius: 5px  5px; /* Rounded left corner for the input */
+}
+
+.pincode-button {
+  width: 100px; /* Set a fixed width for the button */
+  height: 40px;
+  background-color: #ff3e6c;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0; /* Rounded right corner for the button */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.custom-btn {
+  border-radius: 0;
+  padding: 12px 15px;
+  min-width: 250px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #ff3e6c;
+  border: 1px solid #ff3e6c;
+  color: #fff;
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  text-align: center;
+  width: 100%;
+  margin-right: 3%;
+}
+
+.btn-bag {
+  background-color: #ff3e6c; /* Pink background color for "Add to Bag" */
+}
+
+.btn-wishlist {
+  background-color: #f0f0f0; /* Light gray background color for "Add to Wishlist" */
+  color: #333; /* Dark gray text color */
+}
+
+.custom-btn:hover {
+  background-color: #ff66b2; /* Lighter pink for hover effect on both buttons */
+}
+
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+}
+.image-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+}
+.image-container img {
+  width: 320px;
+}

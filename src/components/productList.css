@@ -1,0 +1,32 @@
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    
+
+  }
+  
+  .product-card {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .sidebar-popup {
+    position: relative;
+    /* ... other styles ... */
+    z-index: 1001; /* Set a higher z-index */
+  }

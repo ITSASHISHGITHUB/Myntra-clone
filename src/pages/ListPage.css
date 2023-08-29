@@ -1,0 +1,53 @@
+.listpage-container{
+    width: 100%;
+    position: relative;
+}
+.basic-start {
+
+
+    margin: 16px;
+}
+.basic-start1 {
+
+    font-weight: bold;
+    margin: 16px;
+}
+
+.list-details>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    margin: 20px 10px 1px;
+}
+.basic-start1 {
+    display: flex;
+    align-items: center;
+  }
+   .list-details {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px; 
+  }
+  
+  .list-details li {
+    display: inline-block;
+  }
+  
+  .Combo-box {
+    margin-left: 35rem;
+    
+      
+  }
+  
+.list-details{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-left: 300px;
+}
+
